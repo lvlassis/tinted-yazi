@@ -91,3 +91,34 @@ rules = [
   { mime = "*", fg = "#53676d" },
 ]
 
+[icon]
+globs = []
+dirs  = [
+	{ name = ".config", text = "", fg = "#006dce" },
+	{ name = ".git", text = "", fg = "#006dce" },
+	{ name = ".github", text = "", fg = "#006dce" },
+	{ name = ".npm", text = "", fg = "#006dce" },
+	{ name = "Desktop", text = "", fg = "#006dce" },
+	{ name = "Development", text = "", fg = "#006dce" },
+	{ name = "Documents", text = "", fg = "#006dce" },
+	{ name = "Downloads", text = "", fg = "#006dce" },
+	{ name = "Library", text = "", fg = "#006dce" },
+	{ name = "Movies", text = "", fg = "#006dce" },
+	{ name = "Music", text = "", fg = "#006dce" },
+	{ name = "Pictures", text = "", fg = "#006dce" },
+	{ name = "Public", text = "", fg = "#006dce" },
+	{ name = "Videos", text = "", fg = "#006dce" },
+]
+#files = [
+#
+#]
+#exts = [
+#
+#]
+conds = [
+	# Fallback
+	{ if = "dir & hovered", text = "", fg = "#006dce" },
+	{ if = "dir", text = "", fg = "#006dce" },
+	{ if = "exec", text = "", fg = "#428b00" },
+	{ if = "!dir", text = "", fg = "#3a4d53" },
+]
